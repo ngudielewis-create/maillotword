@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootShop - Maillots de football</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>FootShop</h1>
+                <p class="tagline">Votre boutique de maillots de football</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#produits">Maillots</a></li>
+                    <li><a href="#categories">Catégories</a></li>
+                    <li><a href="#promotions">Promotions</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <a href="#" class="cart-icon">
+                    <span class="icon">🛒</span>
+                    <span class="cart-count">3</span>
+                </a>
+                <a href="#" class="user-icon">
+                    <span class="icon">👤</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Bannière principale -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h2>Maillots Officiels 2024</h2>
+            <p>Découvrez les nouveaux maillots des plus grands clubs et sélections nationales</p>
+            <a href="#produits" class="btn-primary">Voir la collection</a>
+        </div>
+    </section>
+
+    <!-- Section catégories -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Catégories</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <span>🏆</span>
+                    </div>
+                    <h3>Clubs Européens</h3>
+                    <p>Maillots des clubs de Ligue des Champions</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <span>🌍</span>
+                    </div>
+                    <h3>Sélections Nationales</h3>
+                    <p>Maillots des équipes nationales</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <span>👕</span>
+                    </div>
+                    <h3>Maillots Vintage</h3>
+                    <p>Retrouvez les maillots cultes du passé</p>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">
+                        <span>⭐</span>
+                    </div>
+                    <h3>Maillots Personnalisés</h3>
+                    <p>Personnalisez avec votre nom et numéro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section produits -->
+    <section class="products" id="produits">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h2 class="section-title">Nos Maillots Populaires</h2>
+                <button id="btn-add-article" class="btn-add-article" style="background: #28a745; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+                    <span>➕</span> Ajouter un article
+                </button>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Produit 1 -->
+                <div class="product-card" data-product-id="1">
+                    <div class="product-image">
+                        <!-- Remplacez par votre image locale -->
+                        <div class="image-placeholder image-france">
+                        <img src="france.webp" alt="" width="150px" class="product-img"/>
+                        </div>
+                        <span class="product-badge new">Nouveau</span>
+                        <button class="btn-edit-product" data-product-id="1" style="position: absolute; top: 10px; left: 10px; background: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; z-index: 10;">
+                            ✏️ Modifier
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">France 2024</h3>
+                        <p class="product-description">Maillot domicile Équipe de France</p>
+                        <div class="product-price">
+                            <span class="current-price">89.000,99fc</span>
+                            <span class="old-price">109.000,99fc</span>
+                        </div>
+                        <div class="product-rating" data-rating="4.5" data-count="47">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star half">★</span>
+                            <span class="rating-count">(47)</span>
+                        </div>
+                        <a href="#" class="btn-add-to-cart">
+                            <span class="cart-icon">🛒</span> Ajouter au panier
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="product-card" data-product-id="2">
+                    <div class="product-image">
+                        <!-- Remplacez par votre image locale -->
+                        <div class="image-placeholder image-madrid">
+                         <img src="rdc.webp" alt="" class="product-img"/>
+                        </div>
+                        <span class="product-badge sale">Promo</span>
+                        <button class="btn-edit-product" data-product-id="2" style="position: absolute; top: 10px; left: 10px; background: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; z-index: 10;">
+                            ✏️ Modifier
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Rdc 2025</h3>
+                        <p class="product-description">Maillot domicile Real Madrid</p>
+                        <div class="product-price">
+                            <span class="current-price">79.000,99fc</span>
+                            <span class="old-price">99.000,99fc</span>
+                        </div>
+                        <div class="product-rating" data-rating="4" data-count="32">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star empty">☆</span>
+                            <span class="rating-count">(32)</span>
+                        </div>
+                        <a href="#" class="btn-add-to-cart">
+                            <span class="cart-icon">🛒</span> Ajouter au panier
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="product-card" data-product-id="3">
+                    <div class="product-image">
+                        <!-- Remplacez par votre image locale -->
+                        <div class="image-placeholder image-barcelona">
+                            <img src="barca.webp" alt="" class="product-img"/>
+                        </div>
+                        <button class="btn-edit-product" data-product-id="3" style="position: absolute; top: 10px; left: 10px; background: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; z-index: 10;">
+                            ✏️ Modifier
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">FC Barcelone 2024</h3>
+                        <p class="product-description">Maillot domicile FC Barcelone</p>
+                        <div class="product-price">
+                            <span class="current-price">84.000,99fc</span>
+                        </div>
+                        <div class="product-rating" data-rating="5" data-count="56">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="rating-count">(56)</span>
+                        </div>
+                        <a href="#" class="btn-add-to-cart">
+                            <span class="cart-icon">🛒</span> Ajouter au panier
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="product-card" data-product-id="4">
+                    <div class="product-image">
+                        <!-- Remplacez par votre image locale -->
+                        <div class="image-placeholder image-bayern">
+                            <img src="Bayern Munich.webp" alt="" class="product-img"/>
+                        </div>
+                        <span class="product-badge new">Nouveau</span>
+                        <button class="btn-edit-product" data-product-id="4" style="position: absolute; top: 10px; left: 10px; background: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; z-index: 10;">
+                            ✏️ Modifier
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bayern Munich 2024</h3>
+                        <p class="product-description">Maillot domicile Bayern Munich</p>
+                        <div class="product-price">
+                            <span class="current-price">82.000,99fc</span>
+                        </div>
+                        <div class="product-rating" data-rating="4.5" data-count="28">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star half">★</span>
+                            <span class="rating-count">(28)</span>
+                        </div>
+                        <a href="#" class="btn-add-to-cart">
+                            <span class="cart-icon">🛒</span> Ajouter au panier
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section promotions -->
+    <section class="promotions" id="promotions">
+        <div class="container">
+            <h2 class="section-title">Promotions spéciales</h2>
+            <div class="promo-banner">
+                <div class="promo-content">
+                    <h3>Soldes d'été - Jusqu'à -30%</h3>
+                    <p>Profitez de réductions exceptionnelles sur une sélection de maillots</p>
+                    <p class="promo-timer"><span class="timer-icon">⏰</span> Offre valable encore <span class="countdown">5j 12h 30m</span></p>
+                    <a href="#produits" class="btn-secondary">Voir les offres</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section avantages -->
+    <section class="advantages">
+        <div class="container">
+            <h2 class="section-title">Pourquoi choisir FootShop ?</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <span class="advantage-icon">🚚</span>
+                    <h3>Livraison rapide</h3>
+                    <p>Livraison en 48h en France métropolitaine</p>
+                </div>
+                <div class="advantage-card">
+                    <span class="advantage-icon">🔄</span>
+                    <h3>Retours faciles</h3>
+                    <p>30 jours pour changer d'avis</p>
+                </div>
+                <div class="advantage-card">
+                    <span class="advantage-icon">🛡️</span>
+                    <h3>Paiement sécurisé</h3>
+                    <p>Paiement crypté et sécurisé</p>
+                </div>
+                <div class="advantage-card">
+                    <span class="advantage-icon">⭐</span>
+                    <h3>Produits officiels</h3>
+                    <p>Tous nos maillots sont des produits licenciés</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>⚽ FootShop</h3>
+                    <p>Votre boutique spécialisée dans la vente de maillots de football officiels depuis 2010.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">F</a>
+                        <a href="#" class="social-icon">I</a>
+                        <a href="#" class="social-icon">T</a>
+                        <a href="#" class="social-icon">TT</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#produits">Maillots</a></li>
+                        <li><a href="#categories">Catégories</a></li>
+                        <li><a href="#promotions">Promotions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Informations</h3>
+                    <ul>
+                        <li><a href="#">Livraison</a></li>
+                        <li><a href="#">Retours</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p><span class="contact-icon">📍</span> 12 Rue du Stade, 75015 Paris</p>
+                    <p><span class="contact-icon">📞</span> 01 23 45 67 89</p>
+                    <p><span class="contact-icon">✉️</span> contact@footshop.fr</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FootShop - Tous droits réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal pour ajouter/modifier un article -->
+    <div id="article-modal" class="modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5);">
+        <div class="modal-content" style="background-color: #fefefe; margin: 5% auto; padding: 30px; border: 1px solid #888; width: 90%; max-width: 600px; border-radius: 10px; max-height: 90vh; overflow-y: auto;">
+            <span class="close-modal" style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+            <h2 id="modal-title" style="margin-top: 0;">Ajouter un nouvel article</h2>
+            <form id="article-form">
+                <input type="hidden" id="product-id" value="">
+                
+                <div style="margin-bottom: 20px;">
+                    <label for="product-image" style="display: block; margin-bottom: 8px; font-weight: bold;">Photo de l'article (URL ou fichier):</label>
+                    <input type="text" id="product-image-url" placeholder="https://exemple.com/image.jpg" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;">
+                    <span style="display: block; text-align: center; margin: 10px 0; color: #666;">OU</span>
+                    <input type="file" id="product-image-file" accept="image/*" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                    <div id="image-preview" style="margin-top: 15px; text-align: center;">
+                        <img id="preview-img" src="" alt="Aperçu" style="max-width: 200px; max-height: 200px; border: 1px solid #ddd; border-radius: 5px; display: none;">
+                    </div>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="product-title" style="display: block; margin-bottom: 8px; font-weight: bold;">Titre:</label>
+                    <input type="text" id="product-title" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="product-description" style="display: block; margin-bottom: 8px; font-weight: bold;">Description:</label>
+                    <textarea id="product-description" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px; min-height: 80px; resize: vertical;"></textarea>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="product-price" style="display: block; margin-bottom: 8px; font-weight: bold;">Prix actuel:</label>
+                    <input type="text" id="product-price" required placeholder="89.000,99fc" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="product-old-price" style="display: block; margin-bottom: 8px; font-weight: bold;">Ancien prix (optionnel):</label>
+                    <input type="text" id="product-old-price" placeholder="109.000,99fc" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="product-rating" style="display: block; margin-bottom: 8px; font-weight: bold;">Note (1-5):</label>
+                    <input type="number" id="product-rating" min="1" max="5" step="0.5" value="4.5" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="product-rating-count" style="display: block; margin-bottom: 8px; font-weight: bold;">Nombre d'avis:</label>
+                    <input type="number" id="product-rating-count" min="0" value="0" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label for="product-badge" style="display: block; margin-bottom: 8px; font-weight: bold;">Badge (optionnel):</label>
+                    <select id="product-badge" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option value="">Aucun</option>
+                        <option value="new">Nouveau</option>
+                        <option value="sale">Promo</option>
+                    </select>
+                </div>
+
+                <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 30px;">
+                    <button type="button" class="btn-cancel" style="padding: 12px 24px; background: #6c757d; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">Annuler</button>
+                    <button type="submit" class="btn-save" style="padding: 12px 24px; background: #28a745; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; font-weight: bold;">Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let productIdCounter = 4; // Compteur pour les nouveaux produits
+        let currentEditingId = null;
+
+        // Ouvrir le modal pour ajouter un article
+        document.getElementById('btn-add-article').addEventListener('click', function() {
+            document.getElementById('modal-title').textContent = 'Ajouter un nouvel article';
+            document.getElementById('product-id').value = '';
+            document.getElementById('article-form').reset();
+            document.getElementById('preview-img').style.display = 'none';
+            document.getElementById('product-image-url').value = '';
+            document.getElementById('product-image-file').value = '';
+            currentEditingId = null;
+            document.getElementById('article-modal').style.display = 'block';
+        });
+
+        // Ouvrir le modal pour modifier un article
+        document.querySelectorAll('.btn-edit-product').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productId = this.getAttribute('data-product-id');
+                const productCard = document.querySelector(`[data-product-id="${productId}"]`);
+                
+                // Récupérer les données du produit
+                const title = productCard.querySelector('.product-title').textContent;
+                const description = productCard.querySelector('.product-description').textContent;
+                const currentPrice = productCard.querySelector('.current-price').textContent;
+                const oldPriceEl = productCard.querySelector('.old-price');
+                const oldPrice = oldPriceEl ? oldPriceEl.textContent : '';
+                const img = productCard.querySelector('.product-img');
+                const imgSrc = img ? img.src : '';
+                const badgeEl = productCard.querySelector('.product-badge');
+                const badge = badgeEl ? badgeEl.className.includes('new') ? 'new' : (badgeEl.className.includes('sale') ? 'sale' : '') : '';
+                
+                // Remplir le formulaire
+                document.getElementById('modal-title').textContent = 'Modifier l\'article';
+                document.getElementById('product-id').value = productId;
+                document.getElementById('product-title').value = title;
+                document.getElementById('product-description').value = description;
+                document.getElementById('product-price').value = currentPrice;
+                document.getElementById('product-old-price').value = oldPrice;
+                document.getElementById('product-image-url').value = imgSrc;
+                document.getElementById('product-badge').value = badge;
+                
+                // Afficher l'aperçu de l'image
+                if (imgSrc) {
+                    document.getElementById('preview-img').src = imgSrc;
+                    document.getElementById('preview-img').style.display = 'block';
+                }
+                
+                currentEditingId = productId;
+                document.getElementById('article-modal').style.display = 'block';
+            });
+        });
+
+        // Fermer le modal
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('article-modal').style.display = 'none';
+        });
+
+        document.querySelector('.btn-cancel').addEventListener('click', function() {
+            document.getElementById('article-modal').style.display = 'none';
+        });
+
+        // Fermer en cliquant en dehors du modal
+        window.addEventListener('click', function(event) {
+            const modal = document.getElementById('article-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // Aperçu de l'image (URL)
+        document.getElementById('product-image-url').addEventListener('input', function() {
+            const url = this.value;
+            if (url) {
+                document.getElementById('preview-img').src = url;
+                document.getElementById('preview-img').style.display = 'block';
+            } else {
+                document.getElementById('preview-img').style.display = 'none';
+            }
+        });
+
+        // Aperçu de l'image (fichier)
+        document.getElementById('product-image-file').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('preview-img').src = e.target.result;
+                    document.getElementById('preview-img').style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // Soumission du formulaire
+        document.getElementById('article-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const productId = document.getElementById('product-id').value;
+            const title = document.getElementById('product-title').value;
+            const description = document.getElementById('product-description').value;
+            const price = document.getElementById('product-price').value;
+            const oldPrice = document.getElementById('product-old-price').value;
+            const rating = parseFloat(document.getElementById('product-rating').value);
+            const ratingCount = parseInt(document.getElementById('product-rating-count').value);
+            const badge = document.getElementById('product-badge').value;
+            
+            // Obtenir l'URL de l'image
+            let imageUrl = document.getElementById('product-image-url').value;
+            const fileInput = document.getElementById('product-image-file');
+            if (fileInput.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imageUrl = e.target.result;
+                    saveProduct(productId, title, description, price, oldPrice, rating, ratingCount, badge, imageUrl);
+                };
+                reader.readAsDataURL(fileInput.files[0]);
+            } else {
+                saveProduct(productId, title, description, price, oldPrice, rating, ratingCount, badge, imageUrl);
+            }
+        });
+
+        function saveProduct(productId, title, description, price, oldPrice, rating, ratingCount, badge, imageUrl) {
+            if (productId && currentEditingId) {
+                // Modifier un produit existant
+                const productCard = document.querySelector(`[data-product-id="${productId}"]`);
+                
+                // Mettre à jour l'image
+                const img = productCard.querySelector('.product-img');
+                if (img && imageUrl) {
+                    img.src = imageUrl;
+                }
+                
+                // Mettre à jour le badge
+                const existingBadge = productCard.querySelector('.product-badge');
+                if (badge) {
+                    if (!existingBadge) {
+                        const badgeEl = document.createElement('span');
+                        badgeEl.className = `product-badge ${badge}`;
+                        badgeEl.textContent = badge === 'new' ? 'Nouveau' : 'Promo';
+                        productCard.querySelector('.product-image').appendChild(badgeEl);
+                    } else {
+                        existingBadge.className = `product-badge ${badge}`;
+                        existingBadge.textContent = badge === 'new' ? 'Nouveau' : 'Promo';
+                    }
+                } else if (existingBadge) {
+                    existingBadge.remove();
+                }
+                
+                // Mettre à jour les informations
+                productCard.querySelector('.product-title').textContent = title;
+                productCard.querySelector('.product-description').textContent = description;
+                productCard.querySelector('.current-price').textContent = price;
+                
+                const oldPriceEl = productCard.querySelector('.old-price');
+                if (oldPrice) {
+                    if (!oldPriceEl) {
+                        const priceContainer = productCard.querySelector('.product-price');
+                        const oldPriceSpan = document.createElement('span');
+                        oldPriceSpan.className = 'old-price';
+                        oldPriceSpan.textContent = oldPrice;
+                        priceContainer.insertBefore(oldPriceSpan, priceContainer.querySelector('.current-price'));
+                    } else {
+                        oldPriceEl.textContent = oldPrice;
+                    }
+                } else if (oldPriceEl) {
+                    oldPriceEl.remove();
+                }
+                
+                // Mettre à jour la notation
+                updateRating(productCard, rating, ratingCount);
+            } else {
+                // Ajouter un nouveau produit
+                productIdCounter++;
+                const productGrid = document.getElementById('product-grid');
+                
+                const newProduct = document.createElement('div');
+                newProduct.className = 'product-card';
+                newProduct.setAttribute('data-product-id', productIdCounter);
+                
+                const badgeHtml = badge ? `<span class="product-badge ${badge}">${badge === 'new' ? 'Nouveau' : 'Promo'}</span>` : '';
+                const oldPriceHtml = oldPrice ? `<span class="old-price">${oldPrice}</span>` : '';
+                
+                newProduct.innerHTML = `
+                    <div class="product-image" style="position: relative;">
+                        <div class="image-placeholder">
+                            <img src="${imageUrl || 'placeholder.jpg'}" alt="${title}" class="product-img" style="width: 150px;"/>
+                        </div>
+                        ${badgeHtml}
+                        <button class="btn-edit-product" data-product-id="${productIdCounter}" style="position: absolute; top: 10px; left: 10px; background: #007bff; color: white; border: none; padding: 8px 12px; border-radius: 5px; cursor: pointer; font-size: 12px; z-index: 10;">
+                            ✏️ Modifier
+                        </button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">${title}</h3>
+                        <p class="product-description">${description}</p>
+                        <div class="product-price">
+                            ${oldPriceHtml}
+                            <span class="current-price">${price}</span>
+                        </div>
+                        <div class="product-rating" data-rating="${rating}" data-count="${ratingCount}">
+                            ${generateStars(rating)} <span class="rating-count">(${ratingCount})</span>
+                        </div>
+                        <a href="#" class="btn-add-to-cart">
+                            <span class="cart-icon">🛒</span> Ajouter au panier
+                        </a>
+                    </div>
+                `;
+                
+                productGrid.appendChild(newProduct);
+                
+                // Ajouter l'événement de modification au nouveau produit
+                newProduct.querySelector('.btn-edit-product').addEventListener('click', function() {
+                    const pid = this.getAttribute('data-product-id');
+                    const pCard = document.querySelector(`[data-product-id="${pid}"]`);
+                    
+                    const pTitle = pCard.querySelector('.product-title').textContent;
+                    const pDesc = pCard.querySelector('.product-description').textContent;
+                    const pPrice = pCard.querySelector('.current-price').textContent;
+                    const pOldPriceEl = pCard.querySelector('.old-price');
+                    const pOldPrice = pOldPriceEl ? pOldPriceEl.textContent : '';
+                    const pImg = pCard.querySelector('.product-img');
+                    const pImgSrc = pImg ? pImg.src : '';
+                    const pBadgeEl = pCard.querySelector('.product-badge');
+                    const pBadge = pBadgeEl ? pBadgeEl.className.includes('new') ? 'new' : (pBadgeEl.className.includes('sale') ? 'sale' : '') : '';
+                    const pRating = pCard.querySelector('.product-rating').getAttribute('data-rating');
+                    const pRatingCount = pCard.querySelector('.product-rating').getAttribute('data-count');
+                    
+                    document.getElementById('modal-title').textContent = 'Modifier l\'article';
+                    document.getElementById('product-id').value = pid;
+                    document.getElementById('product-title').value = pTitle;
+                    document.getElementById('product-description').value = pDesc;
+                    document.getElementById('product-price').value = pPrice;
+                    document.getElementById('product-old-price').value = pOldPrice;
+                    document.getElementById('product-image-url').value = pImgSrc;
+                    document.getElementById('product-badge').value = pBadge;
+                    document.getElementById('product-rating').value = pRating;
+                    document.getElementById('product-rating-count').value = pRatingCount;
+                    
+                    if (pImgSrc) {
+                        document.getElementById('preview-img').src = pImgSrc;
+                        document.getElementById('preview-img').style.display = 'block';
+                    }
+                    
+                    currentEditingId = pid;
+                    document.getElementById('article-modal').style.display = 'block';
+                });
+            }
+            
+            // Fermer le modal
+            document.getElementById('article-modal').style.display = 'none';
+        }
+
+        function generateStars(rating) {
+            let starsHtml = '';
+            const fullStars = Math.floor(rating);
+            const hasHalfStar = rating % 1 >= 0.5;
+            
+            for (let i = 0; i < fullStars; i++) {
+                starsHtml += '<span class="star">★</span>';
+            }
+            
+            if (hasHalfStar) {
+                starsHtml += '<span class="star half">★</span>';
+            }
+            
+            const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+            for (let i = 0; i < emptyStars; i++) {
+                starsHtml += '<span class="star empty">☆</span>';
+            }
+            
+            return starsHtml;
+        }
+
+        function updateRating(productCard, rating, ratingCount) {
+            const ratingContainer = productCard.querySelector('.product-rating');
+            ratingContainer.setAttribute('data-rating', rating);
+            ratingContainer.setAttribute('data-count', ratingCount);
+            ratingContainer.innerHTML = generateStars(rating) + ` <span class="rating-count">(${ratingCount})</span>`;
+        }
+
+        // Initialiser les événements de modification pour les produits existants
+        document.querySelectorAll('.btn-edit-product').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productId = this.getAttribute('data-product-id');
+                const productCard = document.querySelector(`[data-product-id="${productId}"]`);
+                
+                const title = productCard.querySelector('.product-title').textContent;
+                const description = productCard.querySelector('.product-description').textContent;
+                const currentPrice = productCard.querySelector('.current-price').textContent;
+                const oldPriceEl = productCard.querySelector('.old-price');
+                const oldPrice = oldPriceEl ? oldPriceEl.textContent : '';
+                const img = productCard.querySelector('.product-img');
+                const imgSrc = img ? img.src : '';
+                const badgeEl = productCard.querySelector('.product-badge');
+                const badge = badgeEl ? badgeEl.className.includes('new') ? 'new' : (badgeEl.className.includes('sale') ? 'sale' : '') : '';
+                const ratingContainer = productCard.querySelector('.product-rating');
+                const rating = ratingContainer.getAttribute('data-rating') || '4.5';
+                const ratingCount = ratingContainer.getAttribute('data-count') || '0';
+                
+                document.getElementById('modal-title').textContent = 'Modifier l\'article';
+                document.getElementById('product-id').value = productId;
+                document.getElementById('product-title').value = title;
+                document.getElementById('product-description').value = description;
+                document.getElementById('product-price').value = currentPrice;
+                document.getElementById('product-old-price').value = oldPrice;
+                document.getElementById('product-image-url').value = imgSrc;
+                document.getElementById('product-badge').value = badge;
+                document.getElementById('product-rating').value = rating;
+                document.getElementById('product-rating-count').value = ratingCount;
+                
+                if (imgSrc) {
+                    document.getElementById('preview-img').src = imgSrc;
+                    document.getElementById('preview-img').style.display = 'block';
+                }
+                
+                currentEditingId = productId;
+                document.getElementById('article-modal').style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
